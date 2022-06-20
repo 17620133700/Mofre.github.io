@@ -1,37 +1,183 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mofre</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-You can use the [editor on GitHub](https://github.com/17620133700/Mofre.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e9b5b8;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #c49cad;
+}
 
-### Markdown
+.header h1 {
+  font-size: 50px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
 
-```markdown
-Syntax highlighted code block
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-# Header 1
-## Header 2
-### Header 3
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #fedce0;
+  color: #000000;
+}
 
-- Bulleted
-- List
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
 
-1. Numbered
-2. List
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #e9b5b8;
+  padding-left: 20px;
+}
 
-**Bold** and _Italic_ and `Code` text
+/* 图像部分 */
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1px;
+}
 
-[Link](url) and ![Image](src)
-```
+/* 文章卡片效果 */
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-### Jekyll Themes
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  margin-top: 10px;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/17620133700/Mofre.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
 
-### Support or Contact
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+/* 响应式布局 - 屏幕尺寸小于 200px 时，两列布局改为上下布局 */
+@media screen and (max-width: 200px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 屏幕尺寸小于 100px 时，两列布局改为上下布局 */
+@media screen and (max-width: 100px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 屏幕尺寸小于 50px 时，两列布局改为上下布局 */
+@media screen and (max-width: 50px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+  <link rel="shortcut icon" href="tx/2.ico" />
+</head>
+<body>
+
+<div class="topnav">
+  <a class="top2" href="Mofregrjm.html">首页</a>
+  <a href="#" style="float:right"><a href="gykfz.html">关于开发者</a></a>
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>开发者日常的无聊观看</h2>
+      <h5>2022.6.19</h5>
+      <div class="fakeimg" style="height:400px;"><div class="fakeimg"><img src="wz/xiao96.jpg" alt="Pulpit rock" width="540" height="340"></div></div>
+      <p>凭风指引，且听风铃</p>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>关于开发者</h2>
+      <div class="fakeimg"><img src="tx/1.jpg" alt="Pulpit rock" width="100" height="100"></div>
+      <p>我是一个编程爱好者，喜欢编一些《奇奇怪怪的东西》当然我不会乱用这些代码，我只为爱好和好奇而生，偶尔有时抄袭人家的作品研究，同时休闲的时候，比较喜欢看动漫之类的作品...</p>
+    </div>
+    <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>无</p></div>
+    </div>
+    <div class="card">
+      <h3>关注我</h3>
+      <p>微信号:a931949707</p>
+      <p>QQ号:1242352258</p>
+      <p>哔哩哔哩nid:1587850254</p>
+      <p>---------------</p>
+      <p>开发者不定时在线，建议请判断好时间；如果长时间没有添加你，可能你正在被开发者预约添加中。(由于开发者被大量的人数添加，所以添加后只限制2天时间的好友机会)</p>
+      <p>---------------</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><div class="fakeimg"><img src="wz/rbytb.jpeg" alt="Pulpit rock" width="960" height="540"></div></h2>
+  <h2><a href="Mofregrjm.html">首页</a></h2>
+</div>
+
+</body>
+</html>
